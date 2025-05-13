@@ -16,6 +16,21 @@
 			path = Flavor_Hood;
 			sourceTree = "<group>";
 		};
+		C93D7F002DC3A897006C6FF4 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C93D7F022DC3A8BF006C6FF4 /* View-Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "View-Model";
+			sourceTree = "<group>";
+		};
+		C93D7F032DC3A8E5006C6FF4 /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,9 @@
 		C93D7EE12DC25841006C6FF4 = {
 			isa = PBXGroup;
 			children = (
+				C93D7F002DC3A897006C6FF4 /* Model */,
+				C93D7F022DC3A8BF006C6FF4 /* View-Model */,
+				C93D7F032DC3A8E5006C6FF4 /* View */,
 				C93D7EEC2DC25841006C6FF4 /* Flavor_Hood */,
 				C93D7EEB2DC25841006C6FF4 /* Products */,
 			);
@@ -62,6 +80,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				C93D7EEC2DC25841006C6FF4 /* Flavor_Hood */,
+				C93D7F002DC3A897006C6FF4 /* Model */,
+				C93D7F022DC3A8BF006C6FF4 /* View-Model */,
+				C93D7F032DC3A8E5006C6FF4 /* View */,
 			);
 			name = Flavor_Hood;
 			packageProductDependencies = (
