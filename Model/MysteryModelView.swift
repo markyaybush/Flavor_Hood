@@ -14,8 +14,7 @@ struct ImageAnimation: View {
     @State var guess: String = ""
     @Binding var showAlert: Bool
     @State var question: MysteryFoodQuestion
-    @State var showClearedText: Bool = false
-    @State var newText = ""
+
     
     var body: some View {
         ImageFlip(
@@ -55,16 +54,30 @@ struct ImageAnimation: View {
                     Text("Congratulations! You've unlocked a mystery resturant! Click link to go to restaurant webpage!")
                     Link("Hacking with Swift", destination: URL(string: "https://www.hackingwithswift.com")!)
                         .padding(.top, 200)
-                    Button("Ok", role: .cancel, action: flip)
+
+                    Button {
+                        //actions
+                        flip()
+                        guess = ""
+                    }label: {
+                        //how button looks
+                       Text("Ok")
+                    }
                         .padding(.top, 300)
                 } else {
                     Text("Sorry, try again tomorrow!")
-                    Button("Ok", role: .cancel, action: flip)
+                    Button {
+                        flip()
+                        guess = ""
+                    }label: {
+                       Text("Ok")
+                    }
                         .padding(.top, 200)
                 }
                 
             },
             isFlipped: $isFlipped)
+        
     }
     func randomQuestions() {
         question = riddles
