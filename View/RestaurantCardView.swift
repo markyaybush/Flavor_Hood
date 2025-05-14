@@ -8,6 +8,7 @@
 
 
 import SwiftUI
+import SwiftData
 
 struct RestaurantCardView: View {
     let restaurant: Restaurant
@@ -50,8 +51,10 @@ struct RestaurantCardView_Previews: PreviewProvider {
         RestaurantCardView(
             restaurant: Restaurant(
                 name: "Cannelle",
+                address: "1234 W. Grand Blvd., Ann Arbor, MI 48104",
                 imageName: "cannelle", // Make sure this image is in your Assets.xcassets
-                description: "French bakery in Southeast Michigan."
+                description: "French bakery in Southeast Michigan.",
+                priceLevel: 4
             )
         )
         .previewLayout(.sizeThatFits)

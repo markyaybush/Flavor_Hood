@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SwiftData
 
 struct MysteryFoodQuestion {
     var question: String
@@ -78,9 +78,9 @@ struct MysteryContentView: View {
     var body: some View {
     
             ZStack {
-                Image("Flavorhood")
+                Image("LoadingBackground")
                     .resizable()
-                    .padding(.bottom, 75)
+                    .opacity(0.02)
                     .edgesIgnoringSafeArea(.all)
 //
                 //Image placeholder and animation

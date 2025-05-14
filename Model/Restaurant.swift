@@ -6,10 +6,14 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Restaurant: Identifiable, Equatable {
+
+struct Restaurant: Identifiable, Hashable {
     let id: UUID = UUID()
     let name: String
+    let address: String
     let imageName: String
     let description: String
+    let priceLevel: Int
 }
